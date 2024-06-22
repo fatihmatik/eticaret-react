@@ -22,12 +22,17 @@ const ProductDetailPage = () => {
 
   if (!product) return null;
 
+  console.log(product);
+  console.log(product[0]);
+
+  const imageURL = `/eticaret-react/images/t${parseInt(productId) + 1}.png`;
+
   return (
     <div className="bg-gray-100 p-4 flex">
       <div className="w-1/3 h-[600px] overflow-hidden p-[4px] bg-slate-900 rounded-[12px] ">
         <img
           className="object-cover w-full h-full rounded-[8px]"
-          src={product[0]}
+          src={imageURL}
           alt=""
         />
       </div>

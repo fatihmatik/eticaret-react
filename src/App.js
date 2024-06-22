@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import NoPage from "./pages/NoPage";
+import Nopage from "./pages/Nopage";
 import Shopping from "./pages/Shopping";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
@@ -23,7 +23,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
           <Route path="/products/:productId" element={<ProductDetailPage />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="*" element={<Nopage />} />
         </Routes>
       </div>
     </BrowserRouter>

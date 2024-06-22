@@ -10,27 +10,35 @@ const Careousel = ({ images }) => {
   }, []);
 
   function handleRight() {
-    setState(prevState => prevState.map(number => (number + 1) % 6));
+    setState((prevState) => prevState.map((number) => (number + 1) % 6));
   }
 
   function handleLeft() {
-    setState(prevState => prevState.map(number => (number - 1 + 6) % 6));
+    setState((prevState) => prevState.map((number) => (number - 1 + 6) % 6));
   }
 
   return (
-    <div
-    className="flex justify-center items-center m-6"
-    >
-      <button className="text-2xl bg-blue-500 px-2 rounded-full" onClick={handleLeft}>{"<"}</button>
+    <div className="flex justify-center items-center m-6 ">
+      <button
+        className="text-2xl bg-blue-500 text-white px-4 py-2 rounded-full shadow-md mr-4"
+        onClick={handleLeft}
+      >
+        {"<"}
+      </button>
       {state.map((itr, mapIndex) => (
         <img
           key={mapIndex}
           src={images[itr]}
           alt={mapIndex}
-          className="p-[2px] h-auto w-1/4"
+          className="h-auto w-1/4"
         />
       ))}
-      <button className="text-xl bg-blue-500 px-2 rounded-full" onClick={handleRight}>{">"}</button>
+      <button
+        className="text-2xl bg-blue-500 text-white px-4 py-2 rounded-full shadow-md ml-4"
+        onClick={handleRight}
+      >
+        {">"}
+      </button>
     </div>
   );
 };
