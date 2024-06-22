@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https.//fatihmatik.github.io/eticaret-react/static/css/main.031b6a08.css",
-    "main.js": "/https.//fatihmatik.github.io/eticaret-react/static/js/main.8828ab37.js",
-    "index.html": "/https.//fatihmatik.github.io/eticaret-react/index.html",
-    "main.031b6a08.css.map": "/https.//fatihmatik.github.io/eticaret-react/static/css/main.031b6a08.css.map",
-    "main.8828ab37.js.map": "/https.//fatihmatik.github.io/eticaret-react/static/js/main.8828ab37.js.map"
+    "main.css": "/eticaret-react/static/css/main.031b6a08.css",
+    "main.js": "/eticaret-react/static/js/main.8828ab37.js",
+    "index.html": "/eticaret-react/index.html",
+    "main.031b6a08.css.map": "/eticaret-react/static/css/main.031b6a08.css.map",
+    "main.8828ab37.js.map": "/eticaret-react/static/js/main.8828ab37.js.map"
   },
   "entrypoints": [
     "static/css/main.031b6a08.css",
