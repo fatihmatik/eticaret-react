@@ -1,5 +1,5 @@
 export const imagesArr = [
-  "/images/placeholder1.webp",
+  "./eticaret-react/images/placeholder1.webp",
   "/images/placeholder2.webp",
   "/images/placeholder3.webp",
   "./images/placeholder4.webp",
