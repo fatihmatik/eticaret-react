@@ -12,7 +12,7 @@ import ProductDetailPage from "./pages/ProductDetailPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/eticaret-react/">
       <Navbar />
       <div className="pt-14 bg-gray-100">
         <Routes>
