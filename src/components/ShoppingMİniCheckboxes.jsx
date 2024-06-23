@@ -1,24 +1,28 @@
-import React from 'react';
+import React from "react";
 
-const ShoppingMiniCheckboxes = ({ items, prefix }) => {
-  const checkboxes = items.map((item, index) => (
-    <div key={index} className="flex items-center mb-2">
-      <input 
-        type="checkbox" 
-        id={`${prefix}-checkbox-${index}`} 
-        className="form-checkbox text-blue-600 h-4 w-4 mr-2" 
-      />
-      <label htmlFor={`${prefix}-checkbox-${index}`} className="text-gray-700 hover:text-blue-600 cursor-pointer">
-        {item}
-      </label>
-    </div>
-  ));
-
+const ShoppingMİniCheckboxes = ({
+  items,
+  prefix,
+  selectedFilters,
+  onFilterChange,
+}) => {
   return (
-    <div className="p-4 bg-white shadow rounded-lg hover:shadow-md transition-shadow duration-300">
-      {checkboxes}
+    <div>
+      {items.map((item, index) => (
+        <div key={index} className="mb-2">
+          <label className="flex items-center">
+            <input
+              type="checkbox"
+              checked={selectedFilters.includes(item)}
+              onChange={() => onFilterChange(prefix, item)}
+              className="mr-2"
+            />
+            {item}
+          </label>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default ShoppingMiniCheckboxes;
+export default ShoppingMİniCheckboxes;

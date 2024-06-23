@@ -30,8 +30,8 @@ const Home = () => {
     <>
       <div className="bg-gray-100">
         <ArrayCategories imageURLs={randomElements} />
-        <Careousel images={remainingElements} />
-        <Careousel images={remainingElements} />
+        <Careousel images={remainingElements} textTitle="Çok Satanlar" />
+        <Careousel images={remainingElements} textTitle="İndirimdekiler" />
         <BottomCategories imagesArray={remainingElements} />
         <Footer />
       </div>

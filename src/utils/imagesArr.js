@@ -8,4 +8,6 @@ export const imagesArr = [
   "./images/placeholder7.webp",
   "./images/placeholder8.webp",
   "./images/placeholder9.webp",
+  "./images/placeholder10.webp",
+  "./images/placeholder11.webp",
 ];

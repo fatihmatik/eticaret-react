@@ -21,15 +21,11 @@ const ProductDetailPage = () => {
   const { setItem } = useLocalStorage("cartArr");
 
   if (!product) return null;
-
-  console.log(product);
-  console.log(product[0]);
-
   const imageURL = `/eticaret-react/images/t${parseInt(productId) + 1}.png`;
 
   return (
     <div className="bg-gray-100 p-4 flex">
-      <div className="w-1/3 h-[600px] overflow-hidden p-[4px] bg-slate-900 rounded-[12px] ">
+      <div className="w-1/3 h-[600px] overflow-hidden p-[4px] bg-slate-500 rounded-[12px] ">
         <img
           className="object-cover w-full h-full rounded-[8px]"
           src={imageURL}
@@ -38,7 +34,7 @@ const ProductDetailPage = () => {
       </div>
 
       <div className="ml-4 w-2/3">
-        <h1 className="font-bold text-4xl">{product[1]}</h1>
+        <h1 className="font-bold text-4xl">{product[2]}</h1>
         <div className="w-1/3 my-2">
           <Bar />
         </div>
@@ -50,10 +46,10 @@ const ProductDetailPage = () => {
         </button>
 
         <div className="w-1/3 p-4 mt-4 rounded-[16px]">
-          <p className="font-bold text-4xl text-green-500">{product[4]}</p>
+          <p className="font-bold text-4xl text-green-500">{product[5]}</p>
         </div>
         <div className="bg-gray-200 w-1/3 h-[256px] p-4 mt-4 rounded-[16px] overflow-hidden ">
-          <p className="overflow-y-auto max-h-[256px]">{product[2]}</p>
+          <p className="overflow-y-auto max-h-[256px]">{product[3]}</p>
         </div>
       </div>
     </div>

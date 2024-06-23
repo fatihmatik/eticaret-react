@@ -2,13 +2,13 @@ import React from "react";
 
 const BottomCategories = ({ imagesArray }) => {
   return (
-    <div className="flex flex-wrap justify-center w-2/3 mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-16">
       {imagesArray.map((image, index) => (
         <img
           src={image}
           key={index}
           alt=""
-          className="w-full sm:w-1/3 p-2 h-auto rounded-[32px] "
+          className="w-full h-auto p-2 rounded-[32px]"
         />
       ))}
     </div>

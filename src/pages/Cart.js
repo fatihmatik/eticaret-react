@@ -60,11 +60,11 @@ const Cart = () => {
               <div key={key} className="bg-white p-6 rounded-lg shadow-md">
                 <img
                   className="object-cover w-full h-[360px] rounded-[8px]"
-                  src={product[0]}
+                  src={product[1]}
                   alt=""
                 />
-                <h1 className="font-bold text-2xl mb-2">{product[1]}</h1>
-                <p className="text-lg text-green-500 mb-4">{product[4]}</p>
+                <h1 className="font-bold text-2xl mb-2">{product[2]}</h1>
+                <p className="text-lg text-green-500 mb-4">{product[5]}</p>
               </div>
             );
           })}
