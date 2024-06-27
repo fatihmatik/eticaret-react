@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eticaret-react/static/css/main.33f19850.css",
-    "main.js": "/eticaret-react/static/js/main.171bded0.js",
+    "main.js": "/eticaret-react/static/js/main.637d2194.js",
     "index.html": "/eticaret-react/index.html",
     "main.33f19850.css.map": "/eticaret-react/static/css/main.33f19850.css.map",
-    "main.171bded0.js.map": "/eticaret-react/static/js/main.171bded0.js.map"
+    "main.637d2194.js.map": "/eticaret-react/static/js/main.637d2194.js.map"
   },
   "entrypoints": [
     "static/css/main.33f19850.css",
-    "static/js/main.171bded0.js"
+    "static/js/main.637d2194.js"
   ]
 }
