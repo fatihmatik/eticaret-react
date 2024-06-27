@@ -4,9 +4,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import productsArr from "../utils/productsArr";
 import Bar from "../components/Bar";
 import { useLocalStorage } from "../utils/useLocalStorage";
+import { useNotification } from "../context/NotificationContext";
 
 const ProductDetailPage = () => {
   let { productId } = useParams();
+  const { show } = useNotification();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,6 +25,10 @@ const ProductDetailPage = () => {
   if (!product) return null;
   const imageURL = `/eticaret-react/images/t${parseInt(productId) + 1}.png`;
 
+  function handleClick() {
+    setItem(productId);
+    show();
+  }
   return (
     <div className="bg-gray-100 p-4 flex">
       <div className="w-1/3 h-[600px] overflow-hidden p-[4px] bg-slate-500 rounded-[12px] ">
@@ -40,7 +46,7 @@ const ProductDetailPage = () => {
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-[8px] my-2"
-          onClick={() => setItem(productId)}
+          onClick={() => handleClick()}
         >
           Sepete Ekle
         </button>

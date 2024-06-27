@@ -1,0 +1,139 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "title": "title1",
+            "body": "bofdy1",
+            "author": "author1"
+        },
+        {
+            "id": 2,
+            "title": "title2",
+            "body": "bofdy2",
+            "author": "author2"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "url": "./images/t1.png",
+            "name": "tshirt1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 10,
+            "price": "100$",
+            "filterData": "defacto Erkek XS"
+        },
+        {
+            "id": 2,
+            "url": "./images/t2.png",
+            "name": "tshirt2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 9,
+            "price": "120$",
+            "filterData": "defacto Kadin S"
+        },
+        {
+            "id": 3,
+            "url": "./images/t3.png",
+            "name": "tshirt3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 2,
+            "price": "110$",
+            "filterData": "defacto Kadin M"
+        },
+        {
+            "id": 4,
+            "url": "./images/t4.png",
+            "name": "tshirt4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 8,
+            "price": "90$",
+            "filterData": "defacto Kadin L"
+        },
+        {
+            "id": 5,
+            "url": "./images/t5.png",
+            "name": "tshirt5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 6,
+            "price": "110$",
+            "filterData": "zara Erkek XS"
+        },
+        {
+            "id": 6,
+            "url": "./images/t6.png",
+            "name": "tshirt6",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 4,
+            "price": "120$",
+            "filterData": "zara Kadin XS"
+        },
+        {
+            "id": 7,
+            "url": "./images/t7.png",
+            "name": "tshirt7",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 2,
+            "price": "130$",
+            "filterData": "zara Çocuk XS"
+        },
+        {
+            "id": 8,
+            "url": "./images/t8.png",
+            "name": "tshirt8",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 1,
+            "price": "140$",
+            "filterData": "CK Kadin XS"
+        },
+        {
+            "id": 9,
+            "url": "./images/t9.png",
+            "name": "tshirt9",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 7,
+            "price": "150$",
+            "filterData": "CK Erkek XS"
+        },
+        {
+            "id": 10,
+            "url": "./images/t10.png",
+            "name": "tshirt10",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 6,
+            "price": "10$",
+            "filterData": "H&M Erkek XS"
+        },
+        {
+            "id": 11,
+            "url": "./images/t11.png",
+            "name": "tshirt11",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 8,
+            "price": "1200$",
+            "filterData": "Nixe Erkek XS"
+        },
+        {
+            "id": 12,
+            "url": "./images/t12.png",
+            "name": "tshirt12",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+            "approvement": 4,
+            "price": "50$",
+            "filterData": "Nixe Çocuk XS"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "username": "admin",
+            "password": "admin123"
+        },
+        {
+            "id": 2,
+            "username": "fatih",
+            "password": "fatih123"
+        }
+    ],
+    "carts": []
+}

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useLocalStorage } from "../utils/useLocalStorage";
 import productsArr from "../utils/productsArr";
 
@@ -11,15 +11,6 @@ const Cart = () => {
   });
 
   const localProductsArr = productsArr;
-
-  function reloadCartHandler() {
-    const currentCartArr = getItem();
-    setPageCartArray(Array.isArray(currentCartArr) ? currentCartArr : []);
-  }
-
-  useEffect(() => {
-    reloadCartHandler();
-  });
 
   const handleDeleteCart = () => {
     const confirmDelete = window.confirm(
@@ -37,12 +28,6 @@ const Cart = () => {
         Welcome to the Cart
       </h2>
       <div className="flex justify-center mb-6">
-        <button
-          className="text-white bg-blue-500 px-6 py-3 rounded-lg mr-4"
-          onClick={reloadCartHandler}
-        >
-          Reload the Cart
-        </button>
         <button
           className="text-white bg-red-500 px-6 py-3 rounded-lg"
           onClick={handleDeleteCart}

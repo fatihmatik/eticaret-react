@@ -1,11 +1,7 @@
-// custom useLocalStorage Hook.
-
 export const useLocalStorage = (key) => {
   const setItem = (intVal) => {
     try {
       let currentArr = JSON.parse(window.localStorage.getItem(key)) || [];
-
-      // Ensure currentArr is an array, if not set it to an empty array
       if (!Array.isArray(currentArr)) {
         currentArr = [];
       }
@@ -14,9 +10,6 @@ export const useLocalStorage = (key) => {
         currentArr.push(intVal);
         window.localStorage.setItem(key, JSON.stringify(currentArr));
       }
-      // without the if statement if the intValue is already inside the currentArr
-      // currentArr.push(intVal);
-      // window.localStorage.setItem(key, JSON.stringify(currentArr));
     } catch (error) {
       console.log(error);
     }

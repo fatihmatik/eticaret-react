@@ -1,9 +1,18 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import ShoppingLeftSide from "../components/ShoppingLeftSide";
 import ShoppingCore from "../components/ShoppingCore";
-import productsArr from "../utils/productsArr";
+// import productsArr from "../utils/productsArr";
+import { useDispatch, useSelector } from "react-redux";
+import { fetctmydata } from "../redux/slicer";
 
 const Shopping = () => {
+  /////////////////////////////////////// fetching data with react redux
+  const dispatch = useDispatch();
+  const data = useSelector((state) => state);
+  useEffect(() => {
+    dispatch(fetctmydata());
+  }, [dispatch]);
+
   const [selectedFilters, setSelectedFilters] = useState({
     marka: [],
     beden: [],
@@ -24,18 +33,20 @@ const Shopping = () => {
     });
   }, []);
 
-  const filteredProducts = productsArr.filter((product) => {
-    const metadata = product[6];
+  const filteredProducts = data.mydata.data.filter((product) => {
+    const metadata = product.filterData;
+    if (!metadata) {
+      return false;
+    }
     const [marka, sex, beden] = metadata.split(" ");
     const filters = { marka, sex, beden };
-
     return Object.keys(selectedFilters).every(
       (filterType) =>
         selectedFilters[filterType].length === 0 ||
         selectedFilters[filterType].includes(filters[filterType])
     );
   });
-  console.log(selectedFilters);
+
   return (
     <div className="bg-gray-100">
       <div className="flex">
@@ -43,7 +54,7 @@ const Shopping = () => {
           selectedFilters={selectedFilters}
           onFilterChange={handleFilterChange}
         />
-        <ShoppingCore productsArr={filteredProducts} />
+        <ShoppingCore productsArrProp={filteredProducts} />
       </div>
     </div>
   );
