@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchProfileData = createAsyncThunk("fetchmyData", async () => {
   const data = await fetch(
-    "http://localhost:8000/users"
+    "https://my-json-server.typicode.com/fatihmatik/json-server/users"
   );
   return data.json();
 });

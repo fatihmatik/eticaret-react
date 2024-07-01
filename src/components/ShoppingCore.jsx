@@ -15,7 +15,7 @@ const ShoppingCore = ({ productsArrProp }) => {
   const { show } = useNotification();
 
   const handleAddToCart = (currentProduct) => {
-    setItem(currentProduct.id - 1);
+    setItem(String(currentProduct.id - 1));
     show();
   };
 
@@ -24,7 +24,10 @@ const ShoppingCore = ({ productsArrProp }) => {
       <div className="grid grid-cols-4 gap-4">
         {productsArr &&
           productsArr.map((product, index) => (
-            <div key={index} className="bg-white p-4 shadow rounded-lg">
+            <div
+              key={index}
+              className="bg-white p-4 shadow rounded-lg hover:scale-105 transition ease-in-out 300"
+            >
               <Link to={`/products/${parseInt(product.id - 1)}`}>
                 <img
                   src={product.url}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LogIn from "../components/LogIn";
 import { useLocalStorageForProfile } from "../utils/useLocalStorageForProfile";
+import Welcome from "../components/Welcome";
 
 const Profile = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -39,21 +40,10 @@ const Profile = () => {
   return (
     <>
       {loggedIn ? (
-        <div>
-          <h1>Welcome to your profile!</h1>
-          <button onClick={handleLogout}>Log out</button>
-        </div>
+        <Welcome userName={String("User")} logFunc={handleLogout} />
       ) : (
         <LogIn />
       )}
-      <div className="flex justify-center">
-        <button
-          className="bg-red-500 text-black"
-          onClick={() => removeItem("profileFlag")}
-        >
-          Remove Flag
-        </button>
-      </div>
     </>
   );
 };

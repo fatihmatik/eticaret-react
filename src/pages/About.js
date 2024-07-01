@@ -4,21 +4,22 @@ const About = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md max-w-2xl w-full">
-        <h2 className="text-3xl font-bold mb-4">About Us</h2>
+        <h2 className="text-3xl font-bold mb-4">Fatih Tezcan</h2>
         <p className="text-gray-700 mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec enim
-          eu dolor condimentum suscipit. Integer ac ex nec eros vestibulum
-          convallis. Proin at massa vel ipsum volutpat accumsan. Phasellus
-          dapibus orci non massa suscipit, nec interdum est viverra. Nam at
-          lectus sed neque ultricies tristique non in metus.
+          I’m a Mathematical Engineering graduate from Yıldız Technical
+          University who is a motivated team player and eager to learn and
+          contribute to Data Science, Machine Learning, and Web Design.
+          Currently, I am actively seeking work experience to further develop my
+          skills in the field of Data. Additionally, I am working on personal
+          projects and completing courses related to my field.
         </p>
-        <p className="text-gray-700">
-          Fusce rutrum enim at eros maximus sollicitudin. Suspendisse cursus,
-          orci nec venenatis ullamcorper, orci ligula sollicitudin sem, in
-          convallis nisi augue non metus. Mauris ut volutpat leo. Donec lacinia,
-          orci nec feugiat lobortis, risus lectus ullamcorper lorem, a efficitur
-          lectus risus in metus.
-        </p>
+        <p className="text-blue-700">Check out my Portfolio!</p>
+        <a
+          href="fatihmatik.github.io/portfoglio-react/"
+          className="text-blue-700 font-medium text-xl pt-2"
+        >
+          fatihmatik.github.io/portfoglio-react/
+        </a>
       </div>
     </div>
   );

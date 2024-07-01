@@ -16,7 +16,7 @@ function App() {
     <BrowserRouter basename="/eticaret-react/">
       <NotificationProvider>
         <Navbar />
-        <div className="pt-20 bg-gray-100">
+        <div className="pt-20 bg-gray-100 h-screen">
           <Routes>
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />

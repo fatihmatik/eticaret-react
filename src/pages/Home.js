@@ -4,6 +4,7 @@ import { imagesArr } from "../utils/imagesArr";
 import Careousel from "../components/Careousel";
 import Footer from "../components/Footer";
 import BottomCategories from "../components/BottomCategories";
+import lodash from "lodash";
 
 const Home = () => {
   const [randomElements, setRandomElements] = useState([]);
@@ -40,7 +41,10 @@ const Home = () => {
         </div>
         <ArrayCategories imageURLs={randomElements} />
         <Careousel images={remainingElements} textTitle="Çok Satanlar" />
-        <Careousel images={remainingElements} textTitle="İndirimdekiler" />
+        <Careousel
+          images={lodash.shuffle(remainingElements)}
+          textTitle="İndirimdekiler"
+        />
         <BottomCategories imagesArray={remainingElements} />
         <Footer />
       </div>

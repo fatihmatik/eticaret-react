@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNotification } from "../context/NotificationContext";
+import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
   const { showNotification } = useNotification();
@@ -9,7 +10,7 @@ const Navbar = () => {
     <nav className="bg-blue-500 fixed w-full text-white py-4 top-0 z-10">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="text-xl font-bold hover:scale-105">
-          WORLD'S BEST ECOMMERCE SITE
+          <img src={logo} alt="navbar-logo" />
         </Link>
         <div className="ml-atuo flex space-x-24">
           <Link to="/shopping" className="relative group inline-block">
