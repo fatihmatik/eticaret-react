@@ -135,5 +135,20 @@
             "password": "fatih123"
         }
     ],
-    "carts": []
+    "carts": [
+        {
+            "id": 1,
+            "profileCart": [
+                1,
+                2
+            ]
+        },
+        {
+            "id": 2,
+            "profileCart": [
+                4,
+                5
+            ]
+        }
+    ]
 }

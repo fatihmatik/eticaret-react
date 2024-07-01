@@ -15,7 +15,7 @@ const ShoppingCore = ({ productsArrProp }) => {
   const { show } = useNotification();
 
   const handleAddToCart = (currentProduct) => {
-    setItem(currentProduct.id);
+    setItem(currentProduct.id - 1);
     show();
   };
 
